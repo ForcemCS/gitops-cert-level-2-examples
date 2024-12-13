@@ -18,3 +18,10 @@ spec:
         image: docker.io/kostiscodefresh/gitops-simple-app:v1.0
         ports:
         - containerPort: 8080
+        resources:
+          limits:
+            cpu: 200m
+            memory: 200Mi
+          requests:
+            cpu: 100m
+            memory: 50Mi
