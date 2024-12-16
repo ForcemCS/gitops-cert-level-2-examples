@@ -24,4 +24,10 @@ spec:
         env:
         - name: REGION
           value: "us"
-
+        resources:
+          limits:
+            cpu: 200m
+            memory: 200Mi
+          requests:
+            cpu: 100m
+            memory: 50Mi
